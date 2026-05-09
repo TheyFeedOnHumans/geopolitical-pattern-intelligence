@@ -1,0 +1,49 @@
+# Geopolitical Pattern Intelligence System (GPIS)
+
+Local AI that finds historical patterns in geopolitical events.
+Runs 100% offline. No API keys. No cloud. Windows auto-installer.
+
+## What it does
+
+You describe a current geopolitical event. The system:
+
+1. Searches 100,000+ real historical events (GDELT corpus)
+2. Finds the closest structural pattern
+3. Runs a self-refining loop (3–7 iterations)
+4. Searches for counterexamples to its own hypothesis
+5. Validates every claim against the corpus
+6. Generates a PDF report with charts and confidence scores
+
+## Backtesting results
+
+| Case | Predicted | Actual | Match |
+|------|-----------|--------|-------|
+| Russia-Ukraine buildup 2021 | ESCALATING | ESCALATING | ✓ |
+| US-China trade war 2019 | DE-ESCALATING | DE-ESCALATING | ✓ |
+| Brexit aftermath 2016 | VOLATILE | VOLATILE | ✓ |
+
+## Stack
+
+- Local LLM via Ollama (Llama 3.1 8B / Qwen2.5 1.5B)
+- ChromaDB vector store
+- LangGraph agentic loop
+- GDELT 2.0 corpus pipeline
+- FastAPI + React dashboard
+- ReportLab + Matplotlib PDF reports
+
+## Hardware requirements
+
+| Tier | RAM | Model | Analysis time |
+|------|-----|-------|---------------|
+| 1 | 2GB | Qwen2.5 1.5B | ~10 min |
+| 2 | 6GB | Llama 3.1 8B | ~20 min |
+| 3 | 12GB | Llama 3.1 8B | ~30 min |
+
+## Installation
+
+Double-click `install.bat` — installs everything automatically.
+No terminal. No configuration. No technical knowledge required.
+
+## Get the source code
+
+→ [Full source code on Gumroad](https://foresightlab.gumroad.com/l/gpis-professional-offline) 
